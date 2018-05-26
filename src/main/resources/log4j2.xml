@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="ERROR" monitorInterval="5">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout>
+                <Pattern>%d{YYYY-MM-dd HH:mm:ss.SSS} [%level] %c{1} - %m %ex%n</Pattern>
+            </PatternLayout>
+        </Console>
+        <!-- Async Loggers will auto-flush in batches, so switch off immediateFlush. -->
+
+    </Appenders>
+
+    <Loggers>
+        <Logger name = "root" level="INFO">
+            <AppenderRef ref="Console"/>
+        </Logger>
+    </Loggers>
+</Configuration>
