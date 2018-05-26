@@ -1,4 +1,4 @@
-package com.huba.shceduling.exception;
+package com.huba.scheduling.exception;
 
 public abstract class APIException extends RuntimeException{
 

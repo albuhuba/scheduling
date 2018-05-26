@@ -1,8 +1,8 @@
-package com.huba.shceduling.controller;
+package com.huba.scheduling.controller;
 
-import com.huba.shceduling.request.MeetingRequest;
-import com.huba.shceduling.service.MeetingService;
-import com.huba.shceduling.service.SchedulingService;
+import com.huba.scheduling.request.MeetingRequest;
+import com.huba.scheduling.service.MeetingService;
+import com.huba.scheduling.service.SchedulingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

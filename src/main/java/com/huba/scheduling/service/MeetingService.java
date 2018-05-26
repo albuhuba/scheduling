@@ -1,8 +1,8 @@
-package com.huba.shceduling.service;
+package com.huba.scheduling.service;
 
-import com.huba.shceduling.exception.MeetingException;
-import com.huba.shceduling.model.Meeting;
-import com.huba.shceduling.model.Person;
+import com.huba.scheduling.exception.MeetingException;
+import com.huba.scheduling.model.Meeting;
+import com.huba.scheduling.model.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -29,7 +29,7 @@ public class MeetingService {
     }
 
     private void validateInput(Integer startingHour) {
-        if (startingHour < 0 || startingHour > 24) {
+        if (startingHour <= 0 || startingHour > 24) {
             throw new MeetingException("meeting is out of range");
         }
         // emails should be validated too, or by Spring or by lookups, etc

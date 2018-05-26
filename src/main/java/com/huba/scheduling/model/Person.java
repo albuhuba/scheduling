@@ -1,4 +1,4 @@
-package com.huba.shceduling.model;
+package com.huba.scheduling.model;
 
 import java.util.ArrayList;
 import java.util.Collection;

@@ -1,7 +1,7 @@
-package com.huba.shceduling.service;
+package com.huba.scheduling.service;
 
-import com.huba.shceduling.exception.EmailAlreadyUsedException;
-import com.huba.shceduling.model.Person;
+import com.huba.scheduling.exception.EmailAlreadyUsedException;
+import com.huba.scheduling.model.Person;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package com.huba.shceduling.configuration;
+package com.huba.scheduling.configuration;
 
 public interface Constants {
     String BASE_PACKAGES = "com.huba";

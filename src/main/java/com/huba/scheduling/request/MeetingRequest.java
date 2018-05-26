@@ -1,4 +1,4 @@
-package com.huba.shceduling.request;
+package com.huba.scheduling.request;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
-package com.huba.shceduling.controller;
+package com.huba.scheduling.controller;
 
-import com.huba.shceduling.service.PeopleManagerService;
+import com.huba.scheduling.service.PeopleManagerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
