@@ -10,6 +10,10 @@ public class Meeting {
         this.startingHour = startingHour;
     }
 
+    public Integer getStartingHour() {
+        return startingHour;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

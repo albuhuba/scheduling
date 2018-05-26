@@ -32,6 +32,7 @@ public class MeetingService {
         if (startingHour < 0 || startingHour > 24) {
             throw new MeetingException("meeting is out of range");
         }
+        // emails should be validated too, or by Spring or by lookups, etc
     }
 
 }

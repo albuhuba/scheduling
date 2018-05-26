@@ -2,7 +2,9 @@ package com.huba.shceduling.model;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 public class Person {
 
@@ -11,12 +13,12 @@ public class Person {
 
     private Collection<Meeting> meetings = new ArrayList<>();
 
-    public Person(String name, String email){
+    public Person(String name, String email) {
         this.name = name;
         this.email = email;
     }
 
-    public Person addMeeting(Meeting meeting){
+    public Person addMeeting(Meeting meeting) {
         // ideally this should return a copy, but for simplicity purposes I am reusing the original object
         this.meetings.add(meeting);
         return this;
@@ -30,6 +32,9 @@ public class Person {
         return email;
     }
 
+    public List<Integer> getMeetingTimes() {
+        return meetings.stream().map(m -> m.getStartingHour()).collect(Collectors.toList());
+    }
 
     @Override
     public boolean equals(Object o) {
